@@ -254,16 +254,58 @@ print("FIN.")
 
   #Clase 14 operadores relacionales
 
+'''
 print ("Introduce 2 numeros a comparar: \n ")
 num_uno = int(input("Introduce el primer numero:  ")) 
 num_dos = int(input("Introduce el segundo numero:  "))
 
 print("\n Los numeros a comparar son: ", num_uno, " y ", num_dos,  )
      
-     
-     
-  
+if num_uno == num_dos:
+    print("Es igual")
+if  num_uno != num_dos:
+    print ("Es diferente...")
+if num_uno< num_dos:
+    print("Es menor...")
+if num_uno> num_dos:
+    print ("Es mayor")
+if num_uno<=num_dos:
+    print("Es menor o igual")
+if num_uno>=num_dos:
+    print("Es mayor o igual")
 
-            
+     
+     '''
+
+     #Clase 15 operadores logicos 
+
+#Conjuncion
+print ("Conjuncion (and)") 
+num_uno = int(input("Escribe un numero mayor a 2 y menor a 5: "))
+if num_uno > 2 and num_uno <5:
+    print("El numero ", num_uno, "Cumple con la condicion.\n")
+else:
+    print("El numero ", num_uno, "No cumple con la condicion")
+
+#Disyuncion
+print ("Disyuncion (or)")
+palabra = input ("Para cumplir con la condicion escribe 'si' o 'yes' : ")
+if palabra == "si" or palabra == "yes":
+    print("La condicion se ha cumplido\n")
+else:
+    print("La condicion no se ha cumplido\n")
+
+
+
+
+#Negacion
+print("Negacion (not)")
+num_uno = int (input("Introduce un numero igual a 5: "))
+if not num_uno == 5:
+    print("El numero es diferente a 5 y si e cumple la condicion\n")
+else:
+       print("El numero es igual a 5 y no se cumple la condidcion")        
 
     
+
+    #Clase 16
