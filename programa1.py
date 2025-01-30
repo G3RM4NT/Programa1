@@ -278,7 +278,7 @@ if num_uno>=num_dos:
      '''
 
      #Clase 15 operadores logicos 
-
+'''
 #Conjuncion
 print ("Conjuncion (and)") 
 num_uno = int(input("Escribe un numero mayor a 2 y menor a 5: "))
@@ -294,11 +294,12 @@ if palabra == "si" or palabra == "yes":
     print("La condicion se ha cumplido\n")
 else:
     print("La condicion no se ha cumplido\n")
-
+'''
 
 
 
 #Negacion
+'''
 print("Negacion (not)")
 num_uno = int (input("Introduce un numero igual a 5: "))
 if not num_uno == 5:
@@ -306,6 +307,49 @@ if not num_uno == 5:
 else:
        print("El numero es igual a 5 y no se cumple la condidcion")        
 
-    
+    '''
 
     #Clase 16
+print("************************************")
+print ("Sistema de control vacacional Rappi")
+print("************************************\n")
+
+nombre_empleado = input("Porfavor introduce el nombre del empleado: ")
+clave_departamento = int (input("Introduce la clave del departamento: "))
+antiguedad_empleado = float (input("Porfavot introduce los años laborados del empleado: "))
+
+if clave_departamento ==1:
+
+    if antiguedad_empleado >=1 and antiguedad_empleado <2:
+        print("El empleado", nombre_empleado, "Tiene derecho a 6 dias de vacaciones")
+    elif antiguedad_empleado >=2 and antiguedad_empleado <=6:
+        print("El empleado", nombre_empleado, "Tiene derecho a 14 dias de vacaciones")
+    elif antiguedad_empleado >=7:
+        print("El empleado", nombre_empleado, "Tiene derecho a 20 dias de vacaciones")
+    else:
+         print("El empleado", nombre_empleado, " Aun no Tiene derecho a de vacaciones")
+
+elif clave_departamento ==2:
+    
+    if antiguedad_empleado >=1 and antiguedad_empleado <2:
+        print("El empleado", nombre_empleado, "Tiene derecho a 7 dias de vacaciones")
+    elif antiguedad_empleado >=2 and antiguedad_empleado <=6:
+        print("El empleado", nombre_empleado, "Tiene derecho a 15 dias de vacaciones")
+    elif antiguedad_empleado >=7:
+        print("El empleado", nombre_empleado, "Tiene derecho a 22 dias de vacaciones")
+    else:
+         print("El empleado", nombre_empleado, " Aun no Tiene derecho a de vacaciones")
+
+elif clave_departamento ==3:
+    
+    if antiguedad_empleado >=1 and antiguedad_empleado <2:
+        print("El empleado", nombre_empleado, "Tiene derecho a 10 dias de vacaciones")
+    elif antiguedad_empleado >=2 and antiguedad_empleado <=6:
+        print("El empleado", nombre_empleado, "Tiene derecho a 20 dias de vacaciones")
+    elif antiguedad_empleado >=7:
+        print("El empleado", nombre_empleado, "Tiene derecho a 30 dias de vacaciones")
+    else:
+         print("El empleado", nombre_empleado, " Aun no Tiene derecho a de vacaciones")
+
+else: 
+    print("La clave del departamento no existe")
